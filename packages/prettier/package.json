@@ -1,0 +1,30 @@
+{
+  "name": "@taknepoidet-lint/prettier",
+  "version": "1.0.4",
+  "description": "Конфигурация Prettier",
+	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"prettier","format","prettier-format"
+	],
+  "main": "index.js",
+	"files": [
+		".prettierrc.js",
+		"index.js"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TakNePoidet/taknepoidet-lint.git",
+		"directory": "packages/prettier"
+	},
+	"scripts": {
+    "test": "prettier --write test/**"
+  },
+
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
+}

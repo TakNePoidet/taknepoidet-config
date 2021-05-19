@@ -1,0 +1,11 @@
+{
+  "name": "taknepoidet-lint",
+  "version": "1.0.0",
+	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
+  "workspaces": [
+    "packages/*"
+  ],
+	"engines": {
+		"npm": "^7.0.0"
+	}
+}

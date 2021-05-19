@@ -1,0 +1,42 @@
+{
+	"name": "@taknepoidet-lint/stylelint",
+	"version": "1.0.0",
+	"description": "Конфигурация Stylelint",
+	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"stylelint",
+		"stylelint-config",
+		"standard"
+	],
+	"main": "index.js",
+	"files": [
+		".stylelintrc",
+		".prettierrc.js",
+		"index.js"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TakNePoidet/taknepoidet-lint.git",
+		"directory": "packages/stylelint"
+	},
+	"scripts": {
+		"format": "prettier --write ./**",
+		"test": "stylelint --fix \"test/**/*.{scss,css,sass}\""
+	},
+	"devDependencies": {
+		"prettier": "^2.3.0"
+	},
+	"dependencies": {
+		"stylelint": "^13.13.1",
+		"stylelint-config-rational-order": "^0.1.2",
+		"stylelint-config-recommended-scss": "^4.2.0",
+		"stylelint-config-standard": "^22.0.0",
+		"stylelint-order": "^4.1.0",
+		"stylelint-prettier": "^1.2.0",
+		"stylelint-scss": "^3.19.0"
+	}
+}
