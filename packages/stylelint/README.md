@@ -5,9 +5,9 @@
 Добавьте пакет в свои dev-dependencies, используя npm или yarn
 
 ```bash
-npm i -D stylelint-config-taknepoidet stylelint
+npm i -D @taknepoidet/stylelint-config stylelint
 # или
-yarn add -D stylelint-config-taknepoidet stylelint
+yarn add -D @taknepoidet/stylelint-config stylelint
 ```
 
 ## Использование
@@ -18,6 +18,6 @@ yarn add -D stylelint-config-taknepoidet stylelint
 
 ```json
 {
-	"extends": ["stylelint-config-taknepoidet"]
+  "extends": ["@taknepoidet/stylelint-config"]
 }
 ```
