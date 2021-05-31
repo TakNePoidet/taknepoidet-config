@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # Stylelint конфигурация
 
 ## Установка
@@ -5,9 +7,9 @@
 Добавьте пакет в свои dev-dependencies, используя npm или yarn
 
 ```bash
-npm i -D @taknepoidet/stylelint-config stylelint
+npm i -D @taknepoidet-config/stylelint stylelint
 # или
-yarn add -D @taknepoidet/stylelint-config stylelint
+yarn add -D @taknepoidet-config/stylelint stylelint
 ```
 
 ## Использование
@@ -18,6 +20,6 @@ yarn add -D @taknepoidet/stylelint-config stylelint
 
 ```json
 {
-  "extends": ["@taknepoidet/stylelint-config"]
+	"extends": ["@taknepoidet-config/stylelint"]
 }
 ```

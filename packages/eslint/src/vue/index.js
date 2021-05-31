@@ -4,6 +4,7 @@ const common = require('../common');
 const typescript = require('../typescript/_base');
 
 const vue = deepmerge(deepmerge(common, typescript), {
+	parser: 'vue-eslint-parser',
 	extends: [
 		'plugin:vue/essential',
 		'plugin:vue/base',
@@ -53,9 +54,8 @@ const vue = deepmerge(deepmerge(common, typescript), {
 		// 		math: 'always'
 		// 	}
 		// ],
-		// eslint-disable-next-line global-require
-		'prettier-vue/prettier': ['error', { ...require('@taknepoidet/prettier-config') }],
-
+		// eslint-disable-next-line global-require,import/no-extraneous-dependencies
+		'prettier-vue/prettier': ['error', { ...require('@taknepoidet-config/prettier') }],
 		'@typescript-eslint/no-unused-vars': [2, { args: 'none' }],
 		'@typescript-eslint/no-explicit-any': 0,
 		'@typescript-eslint/ban-ts-comment': 0,

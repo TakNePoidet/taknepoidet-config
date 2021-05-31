@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # ESLint конфигурация
 
 ## Установка
@@ -5,9 +7,9 @@
 Добавьте пакет в свои dev-dependencies, используя npm или yarn
 
 ```bash
-npm i -D eslint-config-taknepoidet eslint
+npm i -D @taknepoidet-config/eslint-config eslint
 # или
-yarn add -D eslint-config-taknepoidet eslint
+yarn add -D @taknepoidet-config/eslint-config eslint
 ```
 
 ## Использование в JavaScript
@@ -18,29 +20,29 @@ yarn add -D eslint-config-taknepoidet eslint
 
 ```json
 {
-	"extends": ["@taknepoidet/standard"]
+	"extends": ["@taknepoidet-config/eslint-config"]
 }
 ```
 
 ## Использование в TypeScript
 
 1. Следуйте инструкциям для JavaScript.
-2. Расширить код `taknepoidet/rules/typescript`.
+2. Расширить код `@taknepoidet-config/eslint-config/rules/typescript`.
 
 ```json
 {
-	"extends": ["taknepoidet/rules/typescript"]
+	"extends": ["@taknepoidet-config/eslint-config/rules/typescript"]
 }
 ```
 
 ## Использование в Vue.js
 
 1. Следуйте инструкциям для JavaScript.
-2. Расширить код `taknepoidet/rules/vue`.
+2. Расширить код `@taknepoidet-config/eslint-config/rules/vue`.
 
 ```json
 {
-	"extends": ["taknepoidet/rules/vue"]
+	"extends": ["@taknepoidet-config/eslint-config/rules/vue"]
 }
 ```
 

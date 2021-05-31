@@ -1,11 +1,29 @@
 {
-  "name": "taknepoidet",
-  "version": "1.0.2",
-  "author": "TakNePoidet <TakNePoidet@yandex.ru>",
-  "workspaces": [
-    "packages/*"
-  ],
-  "engines": {
-    "npm": "^7.0.0"
-  }
+	"name": "taknepoidet-config",
+	"version": "1.0.0",
+	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
+	"workspaces": [
+		"packages/*"
+	],
+	"files": [],
+	"scripts": {
+		"lint": "eslint --fix .",
+		"prettier": "prettier --ignore-unknown --write .",
+		"beautifier": "npm run lint && npm run prettier"
+	},
+	"engines": {
+		"npm": "^7.0.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+	"pre-commit": [
+		"beautifier"
+	],
+	"devDependencies": {
+		"@taknepoidet-config/eslint-config": "file:packages/eslint",
+		"@taknepoidet-config/prettier": "file:packages/prettier"
+	}
 }

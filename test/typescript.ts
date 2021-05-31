@@ -28,13 +28,13 @@ function Sidebar(): IApiSidebar {
 			if (overlay) {
 				overlay.hidden = false;
 				overlay.removeAttribute('sidebar-closed');
-				overlay.setAttribute('sidebar-opended', '');
+				overlay.setAttribute('sidebar-opened', '');
 			}
 			container.hidden = false;
 
 			setTimeout(() => {
 				container.removeAttribute('sidebar-closed');
-				container.setAttribute('sidebar-opended', '');
+				container.setAttribute('sidebar-opened', '');
 
 				document.documentElement.style.marginRight = `${getScrollbarWidth()}px`;
 				document.documentElement.classList.add('scroll-disabled');
@@ -57,13 +57,13 @@ function Sidebar(): IApiSidebar {
 			}
 
 			timeout = setTimeout(() => {
-				container.removeAttribute('sidebar-opended');
+				container.removeAttribute('sidebar-opened');
 				container.removeAttribute('sidebar-closed');
 				container.hidden = true;
 
 				if (overlay) {
 					overlay.hidden = true;
-					overlay.removeAttribute('sidebar-opended');
+					overlay.removeAttribute('sidebar-opened');
 					overlay.removeAttribute('sidebar-closed');
 				}
 				document.documentElement.style.marginRight = '0px';

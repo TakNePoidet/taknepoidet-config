@@ -1,5 +1,4 @@
 module.exports = {
-	'newline-per-chained-call': 0,
 	'no-prototype-builtins': 0,
 	'no-tabs': 0,
 	indent: [

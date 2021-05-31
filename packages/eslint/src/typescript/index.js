@@ -10,7 +10,8 @@ module.exports = {
 				files: ['*.ts', '*.tsx'],
 				parserOptions: {
 					sourceType: 'module',
-					project: ['./tsconfig.json']
+					// eslint-disable-next-line global-require
+					project: './tsconfig.json'
 				},
 				parser: '@typescript-eslint/parser',
 				plugins: ['@typescript-eslint'],

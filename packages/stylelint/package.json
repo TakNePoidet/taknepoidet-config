@@ -1,6 +1,6 @@
 {
-	"name": "@taknepoidet/stylelint-config",
-	"version": "1.0.0",
+	"name": "@taknepoidet-config/stylelint",
+	"version": "1.5.4",
 	"description": "Конфигурация Stylelint",
 	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
 	"license": "MIT",
@@ -14,8 +14,7 @@
 	],
 	"main": "index.js",
 	"files": [
-		".stylelintrc",
-		".prettierrc.js",
+		".stylelintrc.js",
 		"index.js"
 	],
 	"repository": {
@@ -24,12 +23,7 @@
 		"directory": "packages/stylelint"
 	},
 	"scripts": {
-		"format": "prettier --write ./**",
-		"test": "stylelint --fix \"test/**/*.{scss,css,sass}\""
-	},
-	"devDependencies": {
-		"@taknepoidet-config/prettier": "^1.1.0",
-		"prettier": "^2.3.0"
+		"test": "stylelint \"../../test/**/*.{scss,css,sass}\""
 	},
 	"dependencies": {
 		"stylelint": "^13.13.1",
@@ -38,6 +32,7 @@
 		"stylelint-config-standard": "^22.0.0",
 		"stylelint-order": "^4.1.0",
 		"stylelint-prettier": "^1.2.0",
-		"stylelint-scss": "^3.19.0"
+		"stylelint-scss": "^3.19.0",
+		"stylelint-selector-bem-pattern": "^2.1.0"
 	}
 }

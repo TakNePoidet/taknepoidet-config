@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <template>
 	<div>
 		<div>{{ isLover ? loverTitle : upperTitle }}</div>
