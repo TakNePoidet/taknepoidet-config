@@ -55,7 +55,7 @@ const vue = deepmerge(deepmerge(common, typescript), {
 		// 	}
 		// ],
 		// eslint-disable-next-line global-require,import/no-extraneous-dependencies
-		'prettier-vue/prettier': ['error', {...require('@taknepoidet-config/prettier')}],
+		'prettier-vue/prettier': ['error', { ...require('@taknepoidet-config/prettier') }],
 		'@typescript-eslint/no-explicit-any': 0,
 		'@typescript-eslint/ban-ts-comment': 0,
 		'@typescript-eslint/return-await': 0,
@@ -74,9 +74,9 @@ const vue = deepmerge(deepmerge(common, typescript), {
 				style: true,
 
 				customBlocks: {
-					docs: {lang: 'markdown'},
-					config: {lang: 'json'},
-					module: {lang: 'js'},
+					docs: { lang: 'markdown' },
+					config: { lang: 'json' },
+					module: { lang: 'js' },
 					comments: false
 				}
 			},
