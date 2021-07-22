@@ -55,13 +55,15 @@ const vue = deepmerge(deepmerge(common, typescript), {
 		// 	}
 		// ],
 		// eslint-disable-next-line global-require,import/no-extraneous-dependencies
-		'prettier-vue/prettier': ['error', { ...require('@taknepoidet-config/prettier') }],
-		'@typescript-eslint/no-unused-vars': [2, { args: 'none' }],
+		'prettier-vue/prettier': ['error', {...require('@taknepoidet-config/prettier')}],
 		'@typescript-eslint/no-explicit-any': 0,
 		'@typescript-eslint/ban-ts-comment': 0,
 		'@typescript-eslint/return-await': 0,
 		'@typescript-eslint/no-useless-constructor': 0,
-		'@typescript-eslint/explicit-module-boundary-types': 0
+		'@typescript-eslint/explicit-module-boundary-types': 0,
+		'no-unused-vars': 0,
+		'import/named': 0,
+		'@typescript-eslint/no-unused-vars': ['error']
 	},
 	settings: {
 		'import/resolver': 'webpack',
@@ -72,9 +74,9 @@ const vue = deepmerge(deepmerge(common, typescript), {
 				style: true,
 
 				customBlocks: {
-					docs: { lang: 'markdown' },
-					config: { lang: 'json' },
-					module: { lang: 'js' },
+					docs: {lang: 'markdown'},
+					config: {lang: 'json'},
+					module: {lang: 'js'},
 					comments: false
 				}
 			},
@@ -88,7 +90,7 @@ const vue = deepmerge(deepmerge(common, typescript), {
 	parserOptions: {
 		parser: '@typescript-eslint/parser',
 		sourceType: 'module',
-		ecmaVersion: 2020,
+		ecmaVersion: 2021,
 		extraFileExtensions: ['.vue']
 	}
 });
