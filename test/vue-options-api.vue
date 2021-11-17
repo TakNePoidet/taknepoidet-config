@@ -10,6 +10,12 @@
 <script>
 import { defineComponent } from 'vue';
 
+class Alerts {
+	static error(message) {
+		console.error(message);
+	}
+}
+
 export default defineComponent({
 	props: {
 		title: {

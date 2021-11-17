@@ -26,13 +26,14 @@
 		"test": "stylelint \"../../test/**/*.{scss,css,sass}\""
 	},
 	"dependencies": {
-		"stylelint": "^13.13.1",
+		"stylelint": "^14.1.0",
 		"stylelint-config-rational-order": "^0.1.2",
-		"stylelint-config-recommended-scss": "^4.3.0",
-		"stylelint-config-standard": "^22.0.0",
-		"stylelint-order": "^4.1.0",
-		"stylelint-prettier": "^1.2.0",
-		"stylelint-scss": "^3.21.0",
+		"stylelint-config-recommended-scss": "^5.0.1",
+		"stylelint-config-standard-scss": "^2.0.1",
+		"stylelint-config-standard": "^24.0.0",
+		"stylelint-order": "^5.0.0",
+		"stylelint-prettier": "^2.0.0",
+		"stylelint-scss": "^4.0.0",
 		"stylelint-selector-bem-pattern": "^2.1.1"
 	}
 }
