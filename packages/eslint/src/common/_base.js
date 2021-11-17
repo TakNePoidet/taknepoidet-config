@@ -169,5 +169,15 @@ module.exports = {
 	],
 	'no-underscore-dangle': ['error', { allowAfterSuper: true, allowAfterThis: true }],
 	'no-useless-constructor': 0,
-	'class-methods-use-this': 0
+	'class-methods-use-this': 0,
+	'sort-imports': [
+		'error',
+		{
+			ignoreCase: false,
+			ignoreDeclarationSort: false,
+			ignoreMemberSort: false,
+			memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+			allowSeparatedGroups: false
+		}
+	]
 };

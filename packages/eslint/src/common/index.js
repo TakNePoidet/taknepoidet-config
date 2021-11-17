@@ -1,8 +1,8 @@
 const rules = require('./_base');
 
 module.exports = {
-	extends: ['airbnb', 'standard', 'airbnb-base', 'prettier'],
-	plugins: ['prettier', 'unicorn', 'import'],
+	extends: ['airbnb', 'airbnb-base'],
+	plugins: ['import', 'prettier'],
 	parserOptions: {
 		ecmaVersion: 2020,
 		sourceType: 'module',

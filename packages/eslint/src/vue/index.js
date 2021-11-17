@@ -16,7 +16,11 @@ const vue = deepmerge(deepmerge(common, typescript), {
 		'plugin:prettier-vue/recommended',
 		'prettier'
 	],
-	plugins: ['prettier', '@typescript-eslint'],
+	plugins: [
+		// 'prettier',
+		'vuejs-accessibility',
+		'@typescript-eslint'
+	],
 	rules: {
 		'no-use-before-define': 0,
 		'vue/no-deprecated-props-default-this': 0,

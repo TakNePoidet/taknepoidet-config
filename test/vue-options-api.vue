@@ -8,6 +8,7 @@
 </template>
 
 <script>
+// eslint-disable-next-line import/no-unresolved
 import { defineComponent } from 'vue';
 
 class Alerts {
