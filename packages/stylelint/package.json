@@ -26,11 +26,14 @@
 		"test": "stylelint \"../../test/**/*.{scss,css,sass}\""
 	},
 	"dependencies": {
+		"postcss-scss": "^4.0.2",
 		"stylelint": "^14.1.0",
 		"stylelint-config-rational-order": "^0.1.2",
 		"stylelint-config-recommended-scss": "^5.0.1",
+		"stylelint-config-recommended-vue": "^1.0.0",
 		"stylelint-config-standard": "^24.0.0",
 		"stylelint-config-standard-scss": "^2.0.1",
+		"stylelint-declaration-strict-value": "^1.8.0",
 		"stylelint-order": "^5.0.0",
 		"stylelint-prettier": "^2.0.0",
 		"stylelint-scss": "^4.0.0",

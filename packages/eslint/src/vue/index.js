@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const deepmerge = require('deepmerge');
-const common = require('../common');
 const typescript = require('../typescript/_base');
+const common = require('../common');
 
 const vue = deepmerge(deepmerge(common, typescript), {
 	parser: 'vue-eslint-parser',

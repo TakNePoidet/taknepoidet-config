@@ -170,14 +170,15 @@ module.exports = {
 	'no-underscore-dangle': ['error', { allowAfterSuper: true, allowAfterThis: true }],
 	'no-useless-constructor': 0,
 	'class-methods-use-this': 0,
-	'sort-imports': [
-		'error',
+	'import/order': [
+		'warn',
 		{
-			ignoreCase: false,
-			ignoreDeclarationSort: false,
-			ignoreMemberSort: false,
-			memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-			allowSeparatedGroups: false
+			groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+			'newlines-between': 'never',
+			alphabetize: {
+				order: 'desc',
+				caseInsensitive: true
+			}
 		}
 	]
 };

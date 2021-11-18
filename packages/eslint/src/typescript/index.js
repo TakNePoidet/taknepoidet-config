@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 const deepmerge = require('deepmerge');
-const baseTypeScript = require('./_base');
 const common = require('../common/_base');
+const baseTypeScript = require('./_base');
 
 module.exports = {
 	overrides: [
@@ -10,8 +10,7 @@ module.exports = {
 				files: ['*.ts', '*.tsx'],
 				parserOptions: {
 					sourceType: 'module',
-					// eslint-disable-next-line global-require
-					project: './tsconfig.json'
+					project: ['tsconfig.json', '../../tsconfig.json']
 				},
 				parser: '@typescript-eslint/parser',
 				plugins: ['@typescript-eslint'],
