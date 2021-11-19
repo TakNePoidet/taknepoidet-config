@@ -1,13 +1,19 @@
 module.exports = {
-	plugins: ['stylelint-prettier', 'stylelint-selector-bem-pattern', 'stylelint-declaration-strict-value'],
+	plugins: [
+		'stylelint-prettier',
+		'stylelint-selector-bem-pattern',
+		'stylelint-declaration-strict-value',
+		'stylelint-scss'
+	],
 	extends: [
+		'stylelint-config-recommended',
 		'stylelint-config-standard',
 		'stylelint-config-recommended-scss',
-		'stylelint-config-standard-scss',
 		'stylelint-config-rational-order',
-		'stylelint-config-recommended-vue'
+		'stylelint-config-standard-scss'
 	],
 	rules: {
+		'scss/operator-no-unspaced': null,
 		'string-quotes': 'single',
 		indentation: 'tab',
 		'prettier/prettier': true,
@@ -24,6 +30,13 @@ module.exports = {
 		// 	'implicitComponents': true,
 		// 	'ignoreCustomProperties': /.*/,
 		// },
+		'no-invalid-position-at-import-rule': null,
+		'declaration-block-no-redundant-longhand-properties': [
+			true,
+			{
+				ignoreShorthands: ['/grid/']
+			}
+		],
 		'plugin/selector-bem-pattern': {
 			componentName: '[A-Z]+',
 			componentSelectors: {
@@ -31,20 +44,24 @@ module.exports = {
 				combined: '^\\.combined-{componentName}-[a-z]+$'
 			},
 			utilitySelectors: '^\\.util-[a-z]+$'
-		}
+		},
+		'value-no-vendor-prefix': [
+			true,
+			{
+				// option: true,
+				ignoreValues: ['box']
+			}
+		],
+		'shorthand-property-no-redundant-values': true
 	},
 	overrides: [
 		{
 			customSyntax: 'postcss-scss',
-			files: ['*.scss, **/*.scss', '*.sass, **/*.sass'],
-			extends: ['stylelint-config-recommended-scss', 'stylelint-config-standard-scss'],
-			plugins: ['stylelint-scss']
+			files: ['*.scss, **/*.scss', '*.sass, **/*.sass']
 		},
 		{
-			files: ['*.vue', '**/*.vue'],
-			rules: {
-				'unit-allowed-list': ['em', 'rem', 's']
-			}
+			customSyntax: 'postcss-html',
+			files: ['*.vue', '**/*.vue']
 		}
 	]
 };

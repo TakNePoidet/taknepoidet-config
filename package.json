@@ -28,7 +28,7 @@
 		"lerna": "^4.0.0",
 		"pre-commit": "^1.2.2"
 	},
-	"dependencies": {
+	"peerDependencies": {
 		"react": "^17.0.2",
 		"vue": "^3.2.22"
 	}
