@@ -26,6 +26,7 @@
 		"test": "stylelint \"../../test/**/*.{scss,css,sass}\""
 	},
 	"dependencies": {
+		"postcss-html": "^1.3.0",
 		"postcss-scss": "^4.0.2",
 		"stylelint": "^14.1.0",
 		"stylelint-config-rational-order": "^0.1.2",
@@ -36,7 +37,6 @@
 		"stylelint-declaration-strict-value": "^1.8.0",
 		"stylelint-order": "^5.0.0",
 		"stylelint-prettier": "^2.0.0",
-		"stylelint-scss": "^4.0.0",
 		"stylelint-selector-bem-pattern": "^2.1.1"
 	}
 }

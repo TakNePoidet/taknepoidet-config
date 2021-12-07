@@ -1,10 +1,5 @@
 module.exports = {
-	plugins: [
-		'stylelint-prettier',
-		'stylelint-selector-bem-pattern',
-		'stylelint-declaration-strict-value',
-		'stylelint-scss'
-	],
+	plugins: ['stylelint-prettier', 'stylelint-selector-bem-pattern', 'stylelint-declaration-strict-value'],
 	extends: [
 		'stylelint-config-recommended',
 		'stylelint-config-standard',
@@ -56,11 +51,13 @@ module.exports = {
 	},
 	overrides: [
 		{
-			customSyntax: 'postcss-scss',
-			files: ['*.scss, **/*.scss', '*.sass, **/*.sass']
+			// eslint-disable-next-line global-require,import/no-extraneous-dependencies
+			customSyntax: require('postcss-scss'),
+			files: ['**/*.scss', '**/*.sass']
 		},
 		{
-			customSyntax: 'postcss-html',
+			// eslint-disable-next-line global-require
+			customSyntax: require('postcss-html'),
 			files: ['*.vue', '**/*.vue']
 		}
 	]
