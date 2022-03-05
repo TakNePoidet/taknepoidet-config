@@ -47,7 +47,12 @@ module.exports = {
 				ignoreValues: ['box']
 			}
 		],
-		'shorthand-property-no-redundant-values': true
+		'shorthand-property-no-redundant-values': true,
+		'value-list-comma-newline-after': null,
+		'scss/double-slash-comment-whitespace-inside': null,
+		'custom-property-pattern': null,
+		'unit-no-unknown': null,
+		'function-no-unknown': null
 	},
 	overrides: [
 		{

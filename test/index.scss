@@ -206,7 +206,6 @@ footer {
 			// margin-right: 40px;
 			display: block; /* Блочная ссылка */
 			padding: 0 17px;
-			padding: 10px;
 			color: rgba($color: #444, $alpha: 100%);
 			font-weight: bold;
 			font-size: 14px;
@@ -249,7 +248,7 @@ footer {
 
 			.vs__selected {
 				position: absolute;
-				opacity: 40%;
+				opacity: 0.4;
 			}
 		}
 	}
