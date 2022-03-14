@@ -10,7 +10,7 @@ module.exports = {
 				files: ['*.ts', '*.tsx'],
 				parserOptions: {
 					sourceType: 'module',
-					project: ['tsconfig.json', '../../tsconfig.json']
+					project: ['./tsconfig.json']
 				},
 				parser: '@typescript-eslint/parser',
 				plugins: ['@typescript-eslint'],

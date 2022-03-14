@@ -7,12 +7,12 @@
 	],
 	"files": [],
 	"scripts": {
-		"lint": "eslint --fix . ",
+		"lint": "eslint --fix",
 		"prettier": "prettier --ignore-unknown --write .",
 		"beautifier": "npm run lint && npm run prettier"
 	},
 	"engines": {
-		"npm": "^8.0.0"
+		"npm": "8.0.0"
 	},
 	"husky": {
 		"hooks": {
@@ -25,11 +25,11 @@
 	"devDependencies": {
 		"@taknepoidet-config/eslint-config": "file:packages/eslint",
 		"@taknepoidet-config/prettier": "file:packages/prettier",
-		"lerna": "^4.0.0",
-		"pre-commit": "^1.2.2"
+		"lerna": "4.0.0",
+		"pre-commit": "1.2.2"
 	},
 	"peerDependencies": {
-		"react": "^17.0.2",
-		"vue": "^3.2.22"
+		"react": "17.0.2",
+		"vue": "3.2.22"
 	}
 }

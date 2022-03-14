@@ -5,7 +5,8 @@ module.exports = {
 		'stylelint-config-standard',
 		'stylelint-config-recommended-scss',
 		'stylelint-config-rational-order',
-		'stylelint-config-standard-scss'
+		'stylelint-config-standard-scss',
+		'stylelint-config-html/vue'
 	],
 	rules: {
 		'scss/operator-no-unspaced': null,
@@ -59,11 +60,6 @@ module.exports = {
 			// eslint-disable-next-line global-require,import/no-extraneous-dependencies
 			customSyntax: require('postcss-scss'),
 			files: ['**/*.scss', '**/*.sass']
-		},
-		{
-			// eslint-disable-next-line global-require
-			customSyntax: require('postcss-html'),
-			files: ['*.vue', '**/*.vue']
 		}
 	]
 };

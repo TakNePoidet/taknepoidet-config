@@ -1,7 +1,5 @@
 {
 	"useWorkspaces": true,
-	"packages": [
-		"packages/*"
-	],
-	"version": "1.9.1"
+	"packages": ["packages/*"],
+	"version": "1.9.0"
 }

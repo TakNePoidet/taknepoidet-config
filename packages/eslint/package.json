@@ -24,7 +24,7 @@
 		"directory": "packages/eslint"
 	},
 	"scripts": {
-		"test": "eslint -c .eslintrc.js ../../test/**{.ts,.js,.vue}",
+		"test": "eslint --no-ignore -c .eslintrc.js ./test/**{.ts,.js,.vue}",
 		"prepublishOnly": "node ./generate.js"
 	},
 	"devDependencies": {
