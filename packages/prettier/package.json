@@ -1,6 +1,6 @@
 {
 	"name": "@taknepoidet-config/prettier",
-	"version": "1.9.0",
+	"version": "1.9.1",
 	"description": "Конфигурация Prettier",
 	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
 	"license": "MIT",
