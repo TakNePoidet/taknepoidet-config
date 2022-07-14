@@ -9,6 +9,7 @@ module.exports = {
 		'stylelint-config-html/vue'
 	],
 	rules: {
+		'import-notation': 'url',
 		'scss/operator-no-unspaced': null,
 		'string-quotes': 'single',
 		indentation: 'tab',
