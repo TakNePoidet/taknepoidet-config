@@ -31,8 +31,8 @@
 	<h3 class="mt-4 mb-4">Баннер</h3>
 	<div ref="containerCanvas" />
 	<div class="mb-2 mt-2 d-grid gap-3">
-		<button class="btn btn-success mr-2" @click.prevent="download">Скачать</button>
-		<button class="btn btn-secondary">Обновить</button>
+		<button type="button" class="btn btn-success mr-2" @click.prevent="download">Скачать</button>
+		<button type="button" class="btn btn-secondary">Обновить</button>
 	</div>
 </template>
 <script lang="ts">

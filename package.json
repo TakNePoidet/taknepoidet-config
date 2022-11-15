@@ -11,9 +11,6 @@
 		"prettier": "prettier --ignore-unknown --write .",
 		"beautifier": "npm run lint && npm run prettier"
 	},
-	"engines": {
-		"npm": "8.0.0"
-	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "pretty-quick --staged"

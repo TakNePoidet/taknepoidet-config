@@ -70,7 +70,7 @@ const vue = deepmerge(deepmerge(common, typescript), {
 		'@typescript-eslint/no-unused-vars': ['error']
 	},
 	settings: {
-		'import/resolver': 'webpack',
+		// 'import/resolver': 'webpack',
 		'prettier-vue': {
 			SFCBlocks: {
 				template: false,
