@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"@taknepoidet-config/eslint-config": "file:packages/eslint",
 		"@taknepoidet-config/prettier": "file:packages/prettier",
-		"lerna": "4.0.0",
+		"lerna": "6.5.1",
 		"pre-commit": "1.2.2"
 	},
 	"peerDependencies": {

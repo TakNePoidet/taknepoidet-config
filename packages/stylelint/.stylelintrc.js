@@ -11,23 +11,13 @@ module.exports = {
 	rules: {
 		'import-notation': 'url',
 		'scss/operator-no-unspaced': null,
-		'string-quotes': 'single',
-		indentation: 'tab',
+		// 'string-quotes': 'single',
+		// indentation: 'tab',
 		'prettier/prettier': true,
 		'no-descending-specificity': null,
-		'declaration-colon-newline-after': null,
 		'selector-class-pattern': null,
-		'no-extra-semicolons': true,
-		'declaration-block-trailing-semicolon': 'always',
-		'block-opening-brace-newline-after': 'always',
-		'block-closing-brace-newline-before': 'always',
-		// 'plugin/selector-bem-pattern': {
-		// 	'componentName': '^[A-Z][a-zA-Z0-9]+$',
-		// 	'componentSelectors': '^\\.{componentName}(?:__[a-z][a-zA-Z0-9]*)?(?:--[a-z][a-zA-Z0-9]*)?$',
-		// 	'implicitComponents': true,
-		// 	'ignoreCustomProperties': /.*/,
-		// },
 		'no-invalid-position-at-import-rule': null,
+		'declaration-property-value-no-unknown': true,
 		'declaration-block-no-redundant-longhand-properties': [
 			true,
 			{
@@ -50,7 +40,7 @@ module.exports = {
 			}
 		],
 		'shorthand-property-no-redundant-values': true,
-		'value-list-comma-newline-after': null,
+		// 'value-list-comma-newline-after': null,
 		'scss/double-slash-comment-whitespace-inside': null,
 		'custom-property-pattern': null,
 		'unit-no-unknown': null,
