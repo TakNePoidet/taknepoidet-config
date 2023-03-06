@@ -1,6 +1,6 @@
 {
 	"name": "@taknepoidet-config/stylelint",
-	"version": "1.12.1",
+	"version": "1.13.0",
 	"description": "Конфигурация Stylelint",
 	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
 	"license": "MIT",
