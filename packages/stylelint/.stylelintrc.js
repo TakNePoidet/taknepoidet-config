@@ -17,7 +17,7 @@ module.exports = {
 		'no-descending-specificity': null,
 		'selector-class-pattern': null,
 		'no-invalid-position-at-import-rule': null,
-		'declaration-property-value-no-unknown': true,
+		'declaration-property-value-no-unknown': null,
 		'declaration-block-no-redundant-longhand-properties': [
 			true,
 			{
