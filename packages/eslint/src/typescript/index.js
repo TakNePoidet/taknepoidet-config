@@ -14,7 +14,7 @@ module.exports = {
 				},
 				parser: '@typescript-eslint/parser',
 				plugins: ['@typescript-eslint'],
-				extends: ['airbnb-typescript/base', 'plugin:@typescript-eslint/recommended', 'prettier'],
+				extends: ['airbnb-typescript/base', 'eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
 				rules: deepmerge(common, {
 					'prettier/prettier': [
 						'error',
