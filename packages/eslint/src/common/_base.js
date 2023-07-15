@@ -1,15 +1,7 @@
 module.exports = {
 	'no-prototype-builtins': 0,
 	'no-tabs': 0,
-	indent: [
-		'error',
-		'tab',
-		{
-			SwitchCase: 1,
-			VariableDeclarator: 'first',
-			offsetTernaryExpressions: true
-		}
-	],
+	indent: 0,
 	'import/extensions': [
 		'error',
 		'ignorePackages',
@@ -161,12 +153,7 @@ module.exports = {
 	'@typescript-eslint/no-shadow': 0,
 	'quote-props': ['error', 'as-needed'],
 	'no-v-for-template-key-on-child': 0,
-	'react/jsx-filename-extension': [
-		1,
-		{
-			extensions: ['.jsx', '.tsx']
-		}
-	],
+	'react/jsx-filename-extension': 0,
 	'no-underscore-dangle': ['error', { allowAfterSuper: true, allowAfterThis: true }],
 	'no-useless-constructor': 0,
 	'class-methods-use-this': 0,

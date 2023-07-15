@@ -13,8 +13,8 @@ module.exports = {
 					project: ['./tsconfig.json']
 				},
 				parser: '@typescript-eslint/parser',
-				plugins: ['@typescript-eslint'],
-				extends: ['airbnb-typescript/base', 'eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+				plugins: ['import', 'prettier'],
+				extends: ['standard-with-typescript'],
 				rules: deepmerge(common, {
 					'prettier/prettier': [
 						'error',

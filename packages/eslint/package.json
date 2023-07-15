@@ -1,6 +1,6 @@
 {
 	"name": "@taknepoidet-config/eslint-config",
-	"version": "1.16.2",
+	"version": "1.16.0",
 	"description": "Конфигурация ESLint",
 	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
 	"license": "MIT",
@@ -31,22 +31,21 @@
 		"deepmerge": "^4.3.1"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.60.1",
-		"@typescript-eslint/parser": "^5.60.1",
-		"@vue/eslint-config-airbnb": "^7.0.0",
 		"@vue/eslint-config-typescript": "^11.0.3",
-		"eslint": "^8.43.0",
-		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-airbnb-typescript": "^17.0.0",
+		"eslint": "^8.45.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-optimize-regex": "^1.2.1",
-		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-prettier": "^5.0.0",
 		"eslint-plugin-prettier-vue": "^4.2.0",
 		"eslint-plugin-vue": "^9.15.1",
 		"eslint-plugin-vuejs-accessibility": "^2.1.0",
-		"prettier": "^2.8.8",
-		"typescript": "^5.1.6"
+		"prettier": "^3.0.0",
+		"typescript": "^5.1.6",
+		"eslint-config-standard": "^17.1.0",
+		"eslint-config-standard-with-typescript": "^36.1.0",
+		"eslint-plugin-n": "^16.0.1",
+		"eslint-plugin-promise": "^6.1.1"
 	},
 	"browserslist": [
 		"defaults",

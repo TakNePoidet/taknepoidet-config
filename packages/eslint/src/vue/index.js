@@ -9,7 +9,6 @@ const vue = deepmerge(deepmerge(common, typescript), {
 		'plugin:vue/essential',
 		'plugin:vue/base',
 		'plugin:vue/vue3-essential',
-		'@vue/airbnb',
 		'@vue/typescript',
 		'@vue/typescript/recommended',
 		'plugin:vue/recommended',
