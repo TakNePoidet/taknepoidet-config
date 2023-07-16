@@ -3,4 +3,3 @@ node_modules/
 *.log
 rules
 .DS_Store
-lerna.json
