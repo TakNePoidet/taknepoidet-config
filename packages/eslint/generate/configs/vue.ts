@@ -22,25 +22,6 @@ export const vueConfig = defineConfig(() => ({
 			rules: { ...vueRules },
 			settings: {
 				// 'import/resolver': 'webpack',
-				'prettier-vue': {
-					SFCBlocks: {
-						template: false,
-						script: true,
-						style: true,
-
-						customBlocks: {
-							docs: { lang: 'markdown' },
-							config: { lang: 'json' },
-							module: { lang: 'js' },
-							comments: false
-						}
-					},
-					usePrettierrc: true,
-					fileInfoOptions: {
-						ignorePath: '.testignore',
-						withNodeModules: false
-					}
-				}
 			},
 			parserOptions: {
 				parser: '@typescript-eslint/parser',
