@@ -1,5 +1,6 @@
 {
 	"name": "taknepoidet-config",
+	"type": "module",
 	"version": "2.0.0",
 	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
 	"workspaces": [
@@ -9,7 +10,7 @@
 	"scripts": {
 		"lint": "eslint --fix .",
 		"prettier": "prettier --ignore-unknown --write .",
-		"beautifier": "npm run lint && npm run prettier"
+		"beautifier": "pnpm run lint && npm run prettier"
 	},
 	"husky": {
 		"hooks": {
@@ -22,7 +23,8 @@
 	"devDependencies": {
 		"@taknepoidet-config/eslint-config": "file:packages/eslint",
 		"@taknepoidet-config/prettier": "file:packages/prettier",
-		"pre-commit": "1.2.2"
+		"pre-commit": "1.2.2",
+		"lerna": "^7.1.4"
 	},
 	"peerDependencies": {
 		"react": "^17.0.2",

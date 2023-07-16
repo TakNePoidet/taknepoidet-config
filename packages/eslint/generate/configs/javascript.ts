@@ -1,6 +1,7 @@
-const rules = require('./_base');
+import { defineConfig } from '../utility';
+import { javaScriptRules } from '../rules';
 
-module.exports = {
+export const javaScriptConfig = defineConfig(() => ({
 	extends: ['standard'],
 	plugins: ['import', 'prettier'],
 	parserOptions: {
@@ -18,7 +19,7 @@ module.exports = {
 	},
 	rules: {
 		'prettier/prettier': 'error',
-		...rules
+		...javaScriptRules
 	},
 	settings: {
 		'import/resolver': {
@@ -27,4 +28,4 @@ module.exports = {
 			}
 		}
 	}
-};
+}));

@@ -1,5 +1,6 @@
 {
 	"name": "@taknepoidet-config/stylelint",
+	"type": "module",
 	"version": "2.0.0",
 	"description": "Конфигурация Stylelint",
 	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
@@ -12,10 +13,10 @@
 		"stylelint-config",
 		"standard"
 	],
-	"main": "index.js",
+	"main": "index.cjs",
 	"files": [
-		".stylelintrc.js",
-		"index.js"
+		".stylelintrc.cjs",
+		"index.cjs"
 	],
 	"repository": {
 		"type": "git",
