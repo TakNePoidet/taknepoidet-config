@@ -13,14 +13,12 @@ export const vueConfig = defineConfig(() => ({
 			extends: [
 				'plugin:vue/essential',
 				'plugin:vue/base',
+				'eslint:recommended',
 				'plugin:vue/vue3-essential',
-				'@vue/typescript',
-				'@vue/typescript/recommended',
-				'plugin:vue/recommended',
-				'plugin:prettier-vue/recommended',
-				'prettier'
+				'@vue/eslint-config-typescript',
+				'@vue/eslint-config-prettier'
 			],
-			plugins: ['prettier', 'vuejs-accessibility', '@typescript-eslint'],
+			plugins: ['vuejs-accessibility', '@typescript-eslint'],
 			rules: { ...vueRules },
 			settings: {
 				// 'import/resolver': 'webpack',
