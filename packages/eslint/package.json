@@ -1,7 +1,7 @@
 {
 	"name": "@taknepoidet-config/eslint-config",
 	"type": "module",
-	"version": "2.1.0",
+	"version": "2.1.2",
 	"description": "Конфигурация ESLint",
 	"author": "TakNePoidet <TakNePoidet@yandex.ru>",
 	"license": "MIT",
